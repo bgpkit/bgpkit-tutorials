@@ -1,0 +1,18 @@
+[package]
+name = "parallel-parsing"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "sequential"
+path = "src/sequential.rs"
+
+[[bin]]
+name = "parallel"
+path = "src/parallel.rs"
+
+[dependencies]
+bgpkit-parser = "0.7.2"
+bgpkit-broker = "0.3.2"
+rayon = "1.5.1"
